@@ -21,8 +21,6 @@
     
     
     local Settings = {
-        ["WalkSpeed"] 			= 16;
-        ["JumpPower"]			= 0;
         ["GUIOpened"]			= false;
         ["Hitbox"]				= false;
         ["Doors"]				= false;
@@ -336,48 +334,6 @@
             end)
             
             --VariableText(Operation, Parent, Position, Title)
-            local WalkSpeed = VariableText(
-                16,
-                function(TextButton)
-                    TextButton.Changed:Connect(function()
-                        Settings.WalkSpeed=tonumber(TextButton.Text)
-                        if service.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
-                            service.Players.LocalPlayer.Character.Humanoid.WalkSpeed=Settings.WalkSpeed
-                        end
-                    end)
-                    spawn(function()
-                        while wait() do
-                            if service.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
-                                service.Players.LocalPlayer.Character.Humanoid.WalkSpeed=Settings.WalkSpeed
-                            end
-                        end
-                    end)
-                end,
-                PlayerMods,
-                UDim2.new(0.5,-25,0,90),
-                "Walkspeed"
-            )	
-            local JumpPower = VariableText(
-                0,
-                function(TextButton)
-                    TextButton.Changed:Connect(function()
-                        Settings.JumpPower=tonumber(TextButton.Text)
-                        if service.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
-                            service.Players.LocalPlayer.Character.Humanoid.JumpPower=Settings.JumpPower
-                        end
-                    end)
-                    spawn(function()
-                        while wait() do
-                            if service.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
-                                service.Players.LocalPlayer.Character.Humanoid.JumpPower=Settings.JumpPower
-                            end
-                        end
-                    end)
-                end,
-                PlayerMods,
-                UDim2.new(0.5,-25,0,130),
-                "Jumppower"
-            )	
             
             UpdateWaypointList(
                 WayPoints,
@@ -415,13 +371,13 @@
                 service.Workspace:GetChildren(),
                 GiveList,
                 function(Item)
-                    Item.CFrame = service.Players.LocalPlayer.Character.HumanoidRootPart.CFrame*CFrame.new(0,0,-2)
+                fireclickdetector(Item.ClickDetector)
             end)
             UpdateAmmoList(
                 service.Workspace:GetChildren(),
                 AmmoList,
                 function(Item)
-                    Item.CFrame = service.Players.LocalPlayer.Character.HumanoidRootPart.CFrame*CFrame.new(0,0,-2)
+                fireclickdetector(Item.ClickDetector)
             end)
             service.Workspace.ChildAdded:Connect(function(obj)
                 if obj.Name == "Object" or obj.Name == "Worldmodel" then
@@ -430,7 +386,7 @@
                         service.Workspace:GetChildren(),
                         GiveList,
                         function(Item)
-                            Item.CFrame = service.Players.LocalPlayer.Character.HumanoidRootPart.CFrame*CFrame.new(0,0,-2)
+                fireclickdetector(Item.ClickDetector)
                     end)
                 elseif obj.Name == "Ammo" then
                     AmmoList:ClearAllChildren()
@@ -438,7 +394,7 @@
                         service.Workspace:GetChildren(),
                         AmmoList,
                         function(Item)
-                            Item.CFrame = service.Players.LocalPlayer.Character.HumanoidRootPart.CFrame*CFrame.new(0,0,-2)
+                fireclickdetector(Item.ClickDetector)
                     end)
                 end
             end)
@@ -449,7 +405,7 @@
                         service.Workspace:GetChildren(),
                         GiveList,
                         function(Item)
-                            Item.CFrame = service.Players.LocalPlayer.Character.HumanoidRootPart.CFrame*CFrame.new(0,0,-2)
+                fireclickdetector(Item.ClickDetector)
                     end)
                 elseif obj.Name == "Ammo" then
                     AmmoList:ClearAllChildren()
@@ -457,7 +413,7 @@
                         service.Workspace:GetChildren(),
                         AmmoList,
                         function(Item)
-                            Item.CFrame = service.Players.LocalPlayer.Character.HumanoidRootPart.CFrame*CFrame.new(0,0,-2)
+                fireclickdetector(Item.ClickDetector)
                     end)
                 end
             end)
