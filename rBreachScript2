@@ -1,0 +1,901 @@
+function regenRbreUI()
+-- Farewell Infortality.
+-- Version: 2.82
+-- Instances:
+local rBreach = Instance.new("ScreenGui")
+local Select = Instance.new("ScrollingFrame")
+local GiveTP = Instance.new("TextButton")
+local UIGridLayout = Instance.new("UIGridLayout")
+local Teams = Instance.new("TextButton")
+local Special = Instance.new("TextButton")
+local TP = Instance.new("TextButton")
+local Players = Instance.new("TextButton")
+local Ammo = Instance.new("TextButton")
+local Teams_2 = Instance.new("ScrollingFrame")
+local UIGridLayout_2 = Instance.new("UIGridLayout")
+local SCPs = Instance.new("TextButton")
+local FacilityPersonnel = Instance.new("TextButton")
+local ClassDPersonnel = Instance.new("TextButton")
+local SecurityDetail = Instance.new("TextButton")
+local Spectator = Instance.new("TextButton")
+local SerpentsHand = Instance.new("TextButton")
+local MobileTaskForce = Instance.new("TextButton")
+local ChaosInsurgency = Instance.new("TextButton")
+local GlobalOccultCoalition = Instance.new("TextButton")
+local NotPlaying = Instance.new("TextButton")
+local Intro = Instance.new("TextButton")
+local GRUDivPsychotronics = Instance.new("TextButton")
+local UnusualIncidentsUnit = Instance.new("TextButton")
+local Special_2 = Instance.new("ScrollingFrame")
+local UIGridLayout_3 = Instance.new("UIGridLayout")
+local AntiFog = Instance.new("TextButton")
+local Jumping = Instance.new("TextButton")
+local GiveTP_2 = Instance.new("ScrollingFrame")
+local UIGridLayout_4 = Instance.new("UIGridLayout")
+local scan = Instance.new("TextButton")
+local Item = Instance.new("TextButton")
+local TP_2 = Instance.new("ScrollingFrame")
+local UIGridLayout_5 = Instance.new("UIGridLayout")
+local dclass = Instance.new("TextButton")
+local guard = Instance.new("TextButton")
+local exit = Instance.new("TextButton")
+local mtf = Instance.new("TextButton")
+local CI = Instance.new("TextButton")
+local gateA = Instance.new("TextButton")
+local gateB = Instance.new("TextButton")
+local s914 = Instance.new("TextButton")
+local Players_2 = Instance.new("ScrollingFrame")
+local UIGridLayout_6 = Instance.new("UIGridLayout")
+local _2PlrCount = Instance.new("TextButton")
+local _1PlrCount = Instance.new("TextButton")
+local Player = Instance.new("TextButton")
+local Ammo_2 = Instance.new("ScrollingFrame")
+local UIGridLayout_7 = Instance.new("UIGridLayout")
+local scan_2 = Instance.new("TextButton")
+local Item_2 = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local SelectedLabel = Instance.new("TextLabel")
+--Properties:
+rBreach.Name = "rBreach"
+rBreach.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+rBreach.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Select.Name = "Select"
+Select.Parent = rBreach
+Select.BackgroundColor3 = Color3.new(0.498039, 0.54902, 0.552941)
+Select.BorderColor3 = Color3.new(0.498039, 0.54902, 0.552941)
+Select.Position = UDim2.new(0.788949907, 0, 0.646967828, 0)
+Select.Size = UDim2.new(0, 135, 0, 234)
+
+GiveTP.Name = "GiveTP"
+GiveTP.Parent = Select
+GiveTP.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+GiveTP.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+GiveTP.Position = UDim2.new(0.118518531, 0, 0.00388601026, 0)
+GiveTP.Size = UDim2.new(0, 102, 0, 23)
+GiveTP.Font = Enum.Font.ArialBold
+GiveTP.Text = "Give"
+GiveTP.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+GiveTP.TextSize = 14
+GiveTP.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+GiveTP.TextWrapped = true
+
+UIGridLayout.Parent = Select
+UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIGridLayout.CellSize = UDim2.new(0.699999988, 0, 0.0199999996, 0)
+
+Teams.Name = "Teams"
+Teams.Parent = Select
+Teams.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+Teams.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+Teams.Position = UDim2.new(0.118518531, 0, 0.00388601026, 0)
+Teams.Size = UDim2.new(0, 102, 0, 23)
+Teams.Font = Enum.Font.ArialBold
+Teams.Text = "Teams"
+Teams.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+Teams.TextSize = 14
+Teams.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+Teams.TextWrapped = true
+
+Special.Name = "Special"
+Special.Parent = Select
+Special.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+Special.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+Special.Position = UDim2.new(0.118518531, 0, 0.00388601026, 0)
+Special.Size = UDim2.new(0, 102, 0, 23)
+Special.Font = Enum.Font.ArialBold
+Special.Text = "Special"
+Special.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+Special.TextSize = 14
+Special.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+Special.TextWrapped = true
+
+TP.Name = "TP"
+TP.Parent = Select
+TP.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+TP.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+TP.Position = UDim2.new(0.118518531, 0, 0.00388601026, 0)
+TP.Size = UDim2.new(0, 102, 0, 23)
+TP.Font = Enum.Font.ArialBold
+TP.Text = "TP"
+TP.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+TP.TextSize = 14
+TP.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+TP.TextWrapped = true
+
+Players.Name = "Players"
+Players.Parent = Select
+Players.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+Players.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+Players.Position = UDim2.new(0.118518531, 0, 0.00388601026, 0)
+Players.Size = UDim2.new(0, 102, 0, 23)
+Players.Font = Enum.Font.ArialBold
+Players.Text = "Players"
+Players.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+Players.TextSize = 14
+Players.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+Players.TextWrapped = true
+
+Ammo.Name = "Ammo"
+Ammo.Parent = Select
+Ammo.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+Ammo.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+Ammo.Position = UDim2.new(0.118518531, 0, 0.00388601026, 0)
+Ammo.Size = UDim2.new(0, 102, 0, 23)
+Ammo.Font = Enum.Font.ArialBold
+Ammo.Text = "Ammo"
+Ammo.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+Ammo.TextSize = 14
+Ammo.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+Ammo.TextWrapped = true
+
+Teams_2.Name = "Teams"
+Teams_2.Parent = rBreach
+Teams_2.BackgroundColor3 = Color3.new(0.498039, 0.54902, 0.552941)
+Teams_2.BorderColor3 = Color3.new(0.498039, 0.54902, 0.552941)
+Teams_2.Position = UDim2.new(0.710552692, 0, 0.662511885, 0)
+Teams_2.Size = UDim2.new(0, 135, 0, 211)
+
+UIGridLayout_2.Parent = Teams_2
+UIGridLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIGridLayout_2.CellSize = UDim2.new(0.699999988, 0, 0.0199999996, 0)
+
+SCPs.Name = "SCPs"
+SCPs.Parent = Teams_2
+SCPs.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+SCPs.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+SCPs.Position = UDim2.new(0.118518531, 0, 0.00388601026, 0)
+SCPs.Size = UDim2.new(0, 102, 0, 23)
+SCPs.Font = Enum.Font.ArialBold
+SCPs.Text = "SCP"
+SCPs.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+SCPs.TextSize = 14
+SCPs.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+SCPs.TextWrapped = true
+
+FacilityPersonnel.Name = "Facility Personnel"
+FacilityPersonnel.Parent = Teams_2
+FacilityPersonnel.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+FacilityPersonnel.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+FacilityPersonnel.Position = UDim2.new(0.118518531, 0, 0.00388601026, 0)
+FacilityPersonnel.Size = UDim2.new(0, 102, 0, 23)
+FacilityPersonnel.Font = Enum.Font.ArialBold
+FacilityPersonnel.Text = "Facility"
+FacilityPersonnel.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+FacilityPersonnel.TextSize = 14
+FacilityPersonnel.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+FacilityPersonnel.TextWrapped = true
+
+ClassDPersonnel.Name = "Class-D Personnel"
+ClassDPersonnel.Parent = Teams_2
+ClassDPersonnel.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+ClassDPersonnel.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+ClassDPersonnel.Position = UDim2.new(0.118518531, 0, 0.00388601026, 0)
+ClassDPersonnel.Size = UDim2.new(0, 102, 0, 23)
+ClassDPersonnel.Font = Enum.Font.ArialBold
+ClassDPersonnel.Text = "Class-D"
+ClassDPersonnel.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+ClassDPersonnel.TextSize = 14
+ClassDPersonnel.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+ClassDPersonnel.TextWrapped = true
+
+SecurityDetail.Name = "Security Detail"
+SecurityDetail.Parent = Teams_2
+SecurityDetail.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+SecurityDetail.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+SecurityDetail.Position = UDim2.new(0.118518531, 0, 0.00388601026, 0)
+SecurityDetail.Size = UDim2.new(0, 102, 0, 23)
+SecurityDetail.Font = Enum.Font.ArialBold
+SecurityDetail.Text = "Security"
+SecurityDetail.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+SecurityDetail.TextSize = 14
+SecurityDetail.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+SecurityDetail.TextWrapped = true
+
+Spectator.Name = "Spectator"
+Spectator.Parent = Teams_2
+Spectator.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+Spectator.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+Spectator.Position = UDim2.new(0.118518531, 0, 0.00388601026, 0)
+Spectator.Size = UDim2.new(0, 102, 0, 23)
+Spectator.Font = Enum.Font.ArialBold
+Spectator.Text = "Spectator"
+Spectator.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+Spectator.TextSize = 14
+Spectator.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+Spectator.TextWrapped = true
+
+SerpentsHand.Name = "Serpent's Hand"
+SerpentsHand.Parent = Teams_2
+SerpentsHand.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+SerpentsHand.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+SerpentsHand.Position = UDim2.new(0.118518531, 0, 0.00388601026, 0)
+SerpentsHand.Size = UDim2.new(0, 102, 0, 23)
+SerpentsHand.Font = Enum.Font.ArialBold
+SerpentsHand.Text = "Serpent's Hand"
+SerpentsHand.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+SerpentsHand.TextSize = 14
+SerpentsHand.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+SerpentsHand.TextWrapped = true
+
+MobileTaskForce.Name = "Mobile Task Force"
+MobileTaskForce.Parent = Teams_2
+MobileTaskForce.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+MobileTaskForce.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+MobileTaskForce.Position = UDim2.new(0.118518531, 0, 0.00388601026, 0)
+MobileTaskForce.Size = UDim2.new(0, 102, 0, 23)
+MobileTaskForce.Font = Enum.Font.ArialBold
+MobileTaskForce.Text = "MTF"
+MobileTaskForce.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+MobileTaskForce.TextSize = 14
+MobileTaskForce.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+MobileTaskForce.TextWrapped = true
+
+ChaosInsurgency.Name = "Chaos Insurgency"
+ChaosInsurgency.Parent = Teams_2
+ChaosInsurgency.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+ChaosInsurgency.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+ChaosInsurgency.Position = UDim2.new(0.118518531, 0, 0.00388601026, 0)
+ChaosInsurgency.Size = UDim2.new(0, 102, 0, 23)
+ChaosInsurgency.Font = Enum.Font.ArialBold
+ChaosInsurgency.Text = "C.I"
+ChaosInsurgency.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+ChaosInsurgency.TextSize = 14
+ChaosInsurgency.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+ChaosInsurgency.TextWrapped = true
+
+GlobalOccultCoalition.Name = "Global Occult Coalition"
+GlobalOccultCoalition.Parent = Teams_2
+GlobalOccultCoalition.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+GlobalOccultCoalition.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+GlobalOccultCoalition.Position = UDim2.new(0.118518531, 0, 0.00388601026, 0)
+GlobalOccultCoalition.Size = UDim2.new(0, 102, 0, 23)
+GlobalOccultCoalition.Font = Enum.Font.ArialBold
+GlobalOccultCoalition.Text = "G.O.C"
+GlobalOccultCoalition.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+GlobalOccultCoalition.TextSize = 14
+GlobalOccultCoalition.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+GlobalOccultCoalition.TextWrapped = true
+
+NotPlaying.Name = "Not Playing"
+NotPlaying.Parent = Teams_2
+NotPlaying.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+NotPlaying.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+NotPlaying.Position = UDim2.new(0.118518531, 0, 0.00388601026, 0)
+NotPlaying.Size = UDim2.new(0, 102, 0, 23)
+NotPlaying.Font = Enum.Font.ArialBold
+NotPlaying.Text = "Not Playing"
+NotPlaying.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+NotPlaying.TextSize = 14
+NotPlaying.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+NotPlaying.TextWrapped = true
+
+Intro.Name = "Intro"
+Intro.Parent = Teams_2
+Intro.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+Intro.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+Intro.Position = UDim2.new(0.118518531, 0, 0.00388601026, 0)
+Intro.Size = UDim2.new(0, 102, 0, 23)
+Intro.Font = Enum.Font.ArialBold
+Intro.Text = "Intro"
+Intro.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+Intro.TextSize = 14
+Intro.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+Intro.TextWrapped = true
+
+GRUDivPsychotronics.Name = "GRU Div. Psychotronics"
+GRUDivPsychotronics.Parent = Teams_2
+GRUDivPsychotronics.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+GRUDivPsychotronics.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+GRUDivPsychotronics.Position = UDim2.new(0.118518531, 0, 0.00388601026, 0)
+GRUDivPsychotronics.Size = UDim2.new(0, 102, 0, 23)
+GRUDivPsychotronics.Font = Enum.Font.ArialBold
+GRUDivPsychotronics.Text = "GRU Div."
+GRUDivPsychotronics.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+GRUDivPsychotronics.TextSize = 14
+GRUDivPsychotronics.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+GRUDivPsychotronics.TextWrapped = true
+
+UnusualIncidentsUnit.Name = "Unusual Incidents Unit"
+UnusualIncidentsUnit.Parent = Teams_2
+UnusualIncidentsUnit.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+UnusualIncidentsUnit.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+UnusualIncidentsUnit.Position = UDim2.new(0.118518531, 0, 0.00388601026, 0)
+UnusualIncidentsUnit.Size = UDim2.new(0, 102, 0, 23)
+UnusualIncidentsUnit.Font = Enum.Font.ArialBold
+UnusualIncidentsUnit.Text = "UIU"
+UnusualIncidentsUnit.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+UnusualIncidentsUnit.TextSize = 14
+UnusualIncidentsUnit.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+UnusualIncidentsUnit.TextWrapped = true
+
+Special_2.Name = "Special"
+Special_2.Parent = rBreach
+Special_2.BackgroundColor3 = Color3.new(0.498039, 0.54902, 0.552941)
+Special_2.BorderColor3 = Color3.new(0.498039, 0.54902, 0.552941)
+Special_2.Position = UDim2.new(0.710552692, 0, 0.662511885, 0)
+Special_2.Size = UDim2.new(0, 135, 0, 211)
+Special_2.Visible = false
+
+UIGridLayout_3.Parent = Special_2
+UIGridLayout_3.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIGridLayout_3.CellSize = UDim2.new(0.699999988, 0, 0.0199999996, 0)
+
+AntiFog.Name = "AntiFog"
+AntiFog.Parent = Special_2
+AntiFog.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+AntiFog.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+AntiFog.Position = UDim2.new(0.298148155, 0, 0.336856484, 0)
+AntiFog.Size = UDim2.new(0, 94, 0, 30)
+AntiFog.Font = Enum.Font.ArialBold
+AntiFog.Text = "Full bright"
+AntiFog.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+AntiFog.TextSize = 14
+AntiFog.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+AntiFog.TextWrapped = true
+
+Jumping.Name = "Jumping"
+Jumping.Parent = Special_2
+Jumping.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+Jumping.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+Jumping.Position = UDim2.new(0.298148155, 0, 0.336856484, 0)
+Jumping.Size = UDim2.new(0, 94, 0, 30)
+Jumping.Font = Enum.Font.ArialBold
+Jumping.Text = "Force jumping"
+Jumping.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+Jumping.TextSize = 14
+Jumping.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+Jumping.TextWrapped = true
+
+GiveTP_2.Name = "GiveTP"
+GiveTP_2.Parent = rBreach
+GiveTP_2.BackgroundColor3 = Color3.new(0.498039, 0.54902, 0.552941)
+GiveTP_2.BorderColor3 = Color3.new(0.498039, 0.54902, 0.552941)
+GiveTP_2.Position = UDim2.new(0.710552692, 0, 0.662511885, 0)
+GiveTP_2.Size = UDim2.new(0, 135, 0, 211)
+GiveTP_2.Visible = false
+
+UIGridLayout_4.Parent = GiveTP_2
+UIGridLayout_4.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIGridLayout_4.CellSize = UDim2.new(0.699999988, 0, 0.0199999996, 0)
+
+scan.Name = "!scan"
+scan.Parent = GiveTP_2
+scan.BackgroundColor3 = Color3.new(0.160784, 0.501961, 0.72549)
+scan.BorderColor3 = Color3.new(0.160784, 0.501961, 0.72549)
+scan.Position = UDim2.new(0.231481493, 0, 0.332322806, 0)
+scan.Size = UDim2.new(0, 94, 0, 30)
+scan.Font = Enum.Font.ArialBold
+scan.Text = "Search"
+scan.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+scan.TextSize = 14
+scan.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+scan.TextWrapped = true
+
+Item.Name = "Item"
+Item.Parent = GiveTP_2
+Item.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+Item.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+Item.Position = UDim2.new(0.231481493, 0, 0.332322806, 0)
+Item.Size = UDim2.new(0, 94, 0, 30)
+Item.Font = Enum.Font.ArialBold
+Item.Text = "Item"
+Item.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+Item.TextSize = 14
+Item.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+Item.TextWrapped = true
+
+TP_2.Name = "TP"
+TP_2.Parent = rBreach
+TP_2.BackgroundColor3 = Color3.new(0.498039, 0.54902, 0.552941)
+TP_2.BorderColor3 = Color3.new(0.498039, 0.54902, 0.552941)
+TP_2.Position = UDim2.new(0.710552692, 0, 0.662511885, 0)
+TP_2.Size = UDim2.new(0, 135, 0, 211)
+TP_2.Visible = false
+
+UIGridLayout_5.Parent = TP_2
+UIGridLayout_5.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIGridLayout_5.CellSize = UDim2.new(0.699999988, 0, 0.0199999996, 0)
+
+dclass.Name = "dclass"
+dclass.Parent = TP_2
+dclass.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+dclass.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+dclass.Position = UDim2.new(0.150000006, 0, 0, 0)
+dclass.Size = UDim2.new(0, 94, 0, 30)
+dclass.Font = Enum.Font.ArialBold
+dclass.Text = "D Class Spawn"
+dclass.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+dclass.TextSize = 14
+dclass.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+dclass.TextWrapped = true
+
+guard.Name = "guard"
+guard.Parent = TP_2
+guard.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+guard.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+guard.Position = UDim2.new(0.150000006, 0, 0, 0)
+guard.Size = UDim2.new(0, 94, 0, 30)
+guard.Font = Enum.Font.ArialBold
+guard.Text = "Guard Spawn"
+guard.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+guard.TextSize = 14
+guard.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+guard.TextWrapped = true
+
+exit.Name = "exit"
+exit.Parent = TP_2
+exit.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+exit.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+exit.Position = UDim2.new(0.150000006, 0, 0, 0)
+exit.Size = UDim2.new(0, 94, 0, 30)
+exit.Font = Enum.Font.ArialBold
+exit.Text = "Exit"
+exit.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+exit.TextSize = 14
+exit.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+exit.TextWrapped = true
+
+mtf.Name = "mtf"
+mtf.Parent = TP_2
+mtf.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+mtf.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+mtf.Position = UDim2.new(0.150000006, 0, 0, 0)
+mtf.Size = UDim2.new(0, 94, 0, 30)
+mtf.Font = Enum.Font.ArialBold
+mtf.Text = "UIU/MTF Spawn"
+mtf.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+mtf.TextSize = 14
+mtf.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+mtf.TextWrapped = true
+
+CI.Name = "CI"
+CI.Parent = TP_2
+CI.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+CI.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+CI.Position = UDim2.new(0.150000006, 0, 0, 0)
+CI.Size = UDim2.new(0, 94, 0, 30)
+CI.Font = Enum.Font.ArialBold
+CI.Text = "CI Spawn"
+CI.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+CI.TextSize = 14
+CI.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+CI.TextWrapped = true
+
+gateA.Name = "gateA"
+gateA.Parent = TP_2
+gateA.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+gateA.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+gateA.Position = UDim2.new(0.150000006, 0, 0, 0)
+gateA.Size = UDim2.new(0, 94, 0, 30)
+gateA.Font = Enum.Font.ArialBold
+gateA.Text = "Gate A"
+gateA.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+gateA.TextSize = 14
+gateA.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+gateA.TextWrapped = true
+
+gateB.Name = "gateB"
+gateB.Parent = TP_2
+gateB.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+gateB.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+gateB.Position = UDim2.new(0.150000006, 0, 0, 0)
+gateB.Size = UDim2.new(0, 94, 0, 30)
+gateB.Font = Enum.Font.ArialBold
+gateB.Text = "Gate B"
+gateB.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+gateB.TextSize = 14
+gateB.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+gateB.TextWrapped = true
+
+s914.Name = "s914"
+s914.Parent = TP_2
+s914.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+s914.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+s914.Position = UDim2.new(0.150000006, 0, 0, 0)
+s914.Size = UDim2.new(0, 94, 0, 30)
+s914.Font = Enum.Font.ArialBold
+s914.Text = "914"
+s914.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+s914.TextSize = 14
+s914.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+s914.TextWrapped = true
+
+Players_2.Name = "Players"
+Players_2.Parent = rBreach
+Players_2.BackgroundColor3 = Color3.new(0.498039, 0.54902, 0.552941)
+Players_2.BorderColor3 = Color3.new(0.498039, 0.54902, 0.552941)
+Players_2.Position = UDim2.new(0.710552692, 0, 0.662511885, 0)
+Players_2.Size = UDim2.new(0, 135, 0, 211)
+
+UIGridLayout_6.Parent = Players_2
+UIGridLayout_6.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIGridLayout_6.CellSize = UDim2.new(0.699999988, 0, 0.00999999978, 0)
+
+_2PlrCount.Name = "2PlrCount"
+_2PlrCount.Parent = Players_2
+_2PlrCount.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+_2PlrCount.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+_2PlrCount.Position = UDim2.new(0.118518531, 0, 0.00388601026, 0)
+_2PlrCount.Size = UDim2.new(0, 102, 0, 23)
+_2PlrCount.Font = Enum.Font.ArialBold
+_2PlrCount.Text = "0 Alive"
+_2PlrCount.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+_2PlrCount.TextSize = 14
+_2PlrCount.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+_2PlrCount.TextWrapped = true
+
+_1PlrCount.Name = "1PlrCount"
+_1PlrCount.Parent = Players_2
+_1PlrCount.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+_1PlrCount.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+_1PlrCount.Position = UDim2.new(0.118518531, 0, 0.00388601026, 0)
+_1PlrCount.Size = UDim2.new(0, 102, 0, 23)
+_1PlrCount.Font = Enum.Font.ArialBold
+_1PlrCount.Text = "0 Total"
+_1PlrCount.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+_1PlrCount.TextSize = 14
+_1PlrCount.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+_1PlrCount.TextWrapped = true
+
+Player.Name = "Player"
+Player.Parent = Players_2
+Player.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+Player.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+Player.Position = UDim2.new(0.118518531, 0, 0.00388601026, 0)
+Player.Size = UDim2.new(0, 102, 0, 23)
+Player.Font = Enum.Font.ArialBold
+Player.Text = "Name"
+Player.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+Player.TextSize = 10
+Player.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+Player.TextWrapped = true
+Player.TextXAlignment = Enum.TextXAlignment.Left
+
+Ammo_2.Name = "Ammo"
+Ammo_2.Parent = rBreach
+Ammo_2.BackgroundColor3 = Color3.new(0.498039, 0.54902, 0.552941)
+Ammo_2.BorderColor3 = Color3.new(0.498039, 0.54902, 0.552941)
+Ammo_2.Position = UDim2.new(0.710552692, 0, 0.662511885, 0)
+Ammo_2.Size = UDim2.new(0, 135, 0, 211)
+Ammo_2.Visible = false
+
+UIGridLayout_7.Parent = Ammo_2
+UIGridLayout_7.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIGridLayout_7.CellSize = UDim2.new(0.699999988, 0, 0.0199999996, 0)
+
+scan_2.Name = "!scan"
+scan_2.Parent = Ammo_2
+scan_2.BackgroundColor3 = Color3.new(0.160784, 0.501961, 0.72549)
+scan_2.BorderColor3 = Color3.new(0.160784, 0.501961, 0.72549)
+scan_2.Position = UDim2.new(0.231481493, 0, 0.332322806, 0)
+scan_2.Size = UDim2.new(0, 94, 0, 30)
+scan_2.Font = Enum.Font.ArialBold
+scan_2.Text = "Search"
+scan_2.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+scan_2.TextSize = 14
+scan_2.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+scan_2.TextWrapped = true
+
+Item_2.Name = "Item"
+Item_2.Parent = Ammo_2
+Item_2.BackgroundColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+Item_2.BorderColor3 = Color3.new(0.172549, 0.243137, 0.313726)
+Item_2.Position = UDim2.new(0.231481493, 0, 0.332322806, 0)
+Item_2.Size = UDim2.new(0, 94, 0, 30)
+Item_2.Font = Enum.Font.ArialBold
+Item_2.Text = "Item"
+Item_2.TextColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+Item_2.TextSize = 14
+Item_2.TextStrokeColor3 = Color3.new(0.92549, 0.941177, 0.945098)
+Item_2.TextWrapped = true
+
+TextLabel.Parent = rBreach
+TextLabel.BackgroundColor3 = Color3.new(0.584314, 0.647059, 0.65098)
+TextLabel.BorderColor3 = Color3.new(0.584314, 0.647059, 0.65098)
+TextLabel.Position = UDim2.new(0.788949907, 0, 0.620540798, 0)
+TextLabel.Size = UDim2.new(0, 135, 0, 25)
+TextLabel.Font = Enum.Font.Cartoon
+TextLabel.Text = "rBreached                 [3rd Person is enabled]"
+TextLabel.TextColor3 = Color3.new(0, 0, 0)
+TextLabel.TextSize = 12
+TextLabel.TextWrapped = true
+
+SelectedLabel.Name = "SelectedLabel"
+SelectedLabel.Parent = rBreach
+SelectedLabel.BackgroundColor3 = Color3.new(0.584314, 0.647059, 0.65098)
+SelectedLabel.BorderColor3 = Color3.new(0.584314, 0.647059, 0.65098)
+SelectedLabel.Position = UDim2.new(0.710552692, 0, 0.653444469, 0)
+SelectedLabel.Size = UDim2.new(0, 135, 0, 13)
+SelectedLabel.Font = Enum.Font.Cartoon
+SelectedLabel.Text = "Button Name"
+SelectedLabel.TextColor3 = Color3.new(0, 0, 0)
+SelectedLabel.TextSize = 12
+SelectedLabel.TextWrapped = true
+-- Scripts:
+function SCRIPT_VSWO85_FAKESCRIPT() -- rBreach.LocalScript 
+local script = Instance.new('LocalScript')
+script.Parent = rBreach
+spawn(function()
+while wait() do
+game.Players.LocalPlayer.CameraMode = "Classic"
+end
+end)
+
+function Notify(title,text,duration,icon,func,BTN,BTN2)
+game.StarterGui:SetCore("SendNotification", {Title=title,Text=text,Icon=icon,Duration=duration,Callback=func,Button1=BTN,Button2=BTN2})
+end
+
+plr = game.Players.LocalPlayer
+function TPnBack(pos,del)
+bloc = plr.Character.HumanoidRootPart.Position
+plr.Character:MoveTo(pos)
+wait(del)
+plr.Character:MoveTo(bloc)
+
+end
+rBreach = script.Parent
+Teams = rBreach.Teams
+
+
+for i,v in pairs(Teams:GetChildren()) do
+if v.ClassName == "TextButton" then
+v.MouseButton1Click:Connect(function()
+game:GetService("ReplicatedStorage").ChangeTeam:InvokeServer(v.Name) --anything in Teams
+end)
+end
+end
+
+sp = script.Parent.Special
+sp.AntiFog.MouseButton1Click:Connect(function()
+spawn(function()
+local Lighting = game:GetService("Lighting")
+
+while wait() do    
+Lighting.FogEnd = -1
+Lighting.TimeOfDay = "14:00:00"
+Lighting.Brightness = 2
+Lighting.FogStart = 0
+Lighting.ExposureCompensation = 0.5
+Lighting.GlobalShadows = false
+end
+end)
+end)
+
+sp.Jumping.MouseButton1Click:Connect(function()
+spawn(function()
+while wait() do    
+if game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") ~= nil then
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+end
+end
+end)
+end)
+
+sel = script.Parent.Select
+main = script.Parent
+function reset()
+main.GiveTP.Visible = false
+main.Special.Visible = false
+main.Teams.Visible = false
+main.TP.Visible = false
+main.Players.Visible = false
+main.Ammo.Visible = false
+end
+
+sel.GiveTP.MouseButton1Click:Connect(function()
+reset()
+main.GiveTP.Visible = true
+
+main.SelectedLabel.Text = "Give [might lag]"
+end)
+
+sel.Ammo.MouseButton1Click:Connect(function()
+reset()
+main.Ammo.Visible = true
+
+main.SelectedLabel.Text = "Ammo [might lag]"
+end)
+sel.Special.MouseButton1Click:Connect(function()
+reset()
+main.Special.Visible = true
+
+main.SelectedLabel.Text = sel.Special.Name
+end)
+sel.Teams.MouseButton1Click:Connect(function()
+reset()
+main.Teams.Visible = true
+
+main.SelectedLabel.Text = sel.Teams.Name
+end)
+
+sel.TP.MouseButton1Click:Connect(function()
+reset()
+main.TP.Visible = true
+
+main.SelectedLabel.Text = sel.TP.Name
+end)
+
+sel.Players.MouseButton1Click:Connect(function()
+reset()
+main.Players.Visible = true
+
+main.SelectedLabel.Text = sel.Players.Name
+end)
+
+spawn(function()
+P = script.Parent.Players
+tmp = P.Player:Clone()
+
+while wait(0.1) do
+--refresh list
+
+
+for a,b in pairs(P:GetChildren()) do
+if b.Name == "Player" then
+b:Destroy()
+end
+end
+alive = 0
+for i,v in pairs(game.Players:GetChildren()) do
+if v.Team.Name ~= "Spectator" and v.Team.Name ~= "Not Playing" then
+t = tmp:Clone()
+t.Text = v.Name
+t.TextColor3 = Color3.new(v.TeamColor.r,v.TeamColor.g,v.TeamColor.b)
+t.Parent = P
+
+alive = alive + 1
+end
+end
+
+P["1PlrCount"].Text = #game.Players:GetChildren().." Total"
+P["2PlrCount"].Text = alive.." Alive"
+end 
+end)
+
+--TP
+function TPto(loc)
+game.Players.LocalPlayer.Character:MoveTo(loc)
+end
+
+tpe = script.Parent.TP
+tpe.dclass.MouseButton1Click:Connect(function()
+TPto(Vector3.new(-180, 22, -161))
+end)
+tpe.guard.MouseButton1Click:Connect(function()
+TPto(Vector3.new(-165, 0, -357))
+end)
+tpe.exit.MouseButton1Click:Connect(function()
+TPto(Vector3.new(-424, 190, -200))
+end)
+tpe.mtf.MouseButton1Click:Connect(function()
+TPto(Vector3.new(-401, 210, -408))
+end)
+tpe.CI.MouseButton1Click:Connect(function()
+TPto(Vector3.new(-20, 190, -639))
+end)
+tpe.gateA.MouseButton1Click:Connect(function()
+TPto(Vector3.new(-79,9,-530))
+end)
+tpe.gateB.MouseButton1Click:Connect(function()
+TPto(Vector3.new(-343, 9, -332))
+end)
+tpe.s914.MouseButton1Click:Connect(function()
+TPto(Vector3.new(64, 9, -46))
+end)
+ItemTmp = main.GiveTP.Item:Clone()
+main.GiveTP.Item:Destroy()
+
+main.GiveTP["!scan"].MouseButton1Click:Connect(function()
+--scan entire  workspace
+Notify("WARNING","Items in list will not always be avaliable!")
+
+for i,v in pairs(main.GiveTP:GetChildren()) do
+if v.Name == "Item" then
+v:Destroy()
+end
+end
+
+for i,v in pairs(game.Workspace:GetChildren()) do
+print(v)
+if v.Name == "Worldmodel" or v.Name == "Object" then
+Item = ItemTmp:Clone()
+Item.Text = v.BillboardGui.TextLabel.Text
+Item.Parent = main.GiveTP
+
+Item.MouseButton1Click:Connect(function() 
+if v ~= nil then
+if game.Players.LocalPlayer.Team.Name == "Spectator" then
+Notify("Wrong Class","Spectators cant pick up items!")
+return
+end
+fireclickdetector(v.ClickDetector)
+wait(1)
+if v == nil then
+Item:Destroy()
+end
+Item.Text = v.Name
+else
+Notify("Item Gone","Item is no longer avaliable")
+Item:Destroy()
+end
+end)
+end
+end
+end)
+
+AmmoTmp = main.Ammo.Item:Clone()
+main.Ammo.Item:Destroy()
+
+main.Ammo["!scan"].MouseButton1Click:Connect(function()
+--scan entire  workspace
+Notify("WARNING","Items in list will not always be avaliable!")
+
+for i,v in pairs(main.Ammo:GetChildren()) do
+if v.Name == "Item" then
+v:Destroy()
+end
+end
+
+for i,v in pairs(game.Workspace:GetChildren()) do
+print(v)
+if v.Name == "Ammo" then
+Item = AmmoTmp:Clone()
+Item.Text = v.BillboardGui.TextLabel.Text
+Item.Parent = main.Ammo
+
+Item.MouseButton1Click:Connect(function() 
+if v ~= nil then
+if game.Players.LocalPlayer.Team.Name == "Spectator" then
+Notify("Wrong Class","Spectators cant pick up items!")
+return
+end
+fireclickdetector(v.ClickDetector)
+wait(1)
+if v == nil then
+Item:Destroy()
+end
+Item.Text = v.Name
+else
+Notify("Item Gone","Item is no longer avaliable")
+Item:Destroy()
+end
+end)
+end
+end
+end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_VSWO85_FAKESCRIPT))
+end
+
+function tryRURbreUI()
+if game.Players.LocalPlayer.PlayerGui:findFirstChild("rBreach") == nil then
+regenRbreUI()
+end
+end
+
+while true do
+wait(0.1)
+    tryRURbreUI()
+end
