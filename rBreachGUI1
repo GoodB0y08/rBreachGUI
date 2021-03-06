@@ -371,13 +371,13 @@ do
 			service.Workspace:GetChildren(),
 			GiveList,
 			function(Item)
-				Item.CFrame = service.Players.LocalPlayer.Character.HumanoidRootPart.CFrame*CFrame.new(0,0,-2)
+				fireclickdetector(Item.ClickDetector)
 		end)
 		UpdateAmmoList(
 			service.Workspace:GetChildren(),
 			AmmoList,
 			function(Item)
-				Item.CFrame = service.Players.LocalPlayer.Character.HumanoidRootPart.CFrame*CFrame.new(0,0,-2)
+				fireclickdetector(Item.ClickDetector)
 		end)
 		service.Workspace.ChildAdded:Connect(function(obj)
 			if obj.Name == "Object" or obj.Name == "Worldmodel" then
@@ -386,7 +386,7 @@ do
 					service.Workspace:GetChildren(),
 					GiveList,
 					function(Item)
-						Item.CFrame = service.Players.LocalPlayer.Character.HumanoidRootPart.CFrame*CFrame.new(0,0,-2)
+				fireclickdetector(Item.ClickDetector)
 				end)
 			elseif obj.Name == "Ammo" then
 				AmmoList:ClearAllChildren()
@@ -394,7 +394,7 @@ do
 					service.Workspace:GetChildren(),
 					AmmoList,
 					function(Item)
-						Item.CFrame = service.Players.LocalPlayer.Character.HumanoidRootPart.CFrame*CFrame.new(0,0,-2)
+				fireclickdetector(Item.ClickDetector)
 				end)
 			end
 		end)
@@ -405,7 +405,7 @@ do
 					service.Workspace:GetChildren(),
 					GiveList,
 					function(Item)
-						Item.CFrame = service.Players.LocalPlayer.Character.HumanoidRootPart.CFrame*CFrame.new(0,0,-2)
+				fireclickdetector(Item.ClickDetector)
 				end)
 			elseif obj.Name == "Ammo" then
 				AmmoList:ClearAllChildren()
@@ -413,7 +413,7 @@ do
 					service.Workspace:GetChildren(),
 					AmmoList,
 					function(Item)
-						Item.CFrame = service.Players.LocalPlayer.Character.HumanoidRootPart.CFrame*CFrame.new(0,0,-2)
+				fireclickdetector(Item.ClickDetector)
 				end)
 			end
 		end)
